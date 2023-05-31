@@ -1,0 +1,167 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+:root {
+    --header-height:83px;
+    --footer-height:105px;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+}
+a {
+    text-decoration: none;
+}
+
+/* header */
+header {
+    height: var(--header-height);
+    background-color: #fff;
+    color: #090909;
+    padding: 1em 1em 0;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap:0.5em;
+    font-weight: 600;
+    font-size: large;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    text-align: end;
+}
+header a {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 1em;
+    color: inherit;
+}
+header a:hover, header a:active {
+    color: #EF233C;
+    cursor: pointer;
+}
+
+/* principal section */
+.principal {
+    background-image: url("https://img.freepik.com/free-photo/joyful-african-web-developer-working-new-project-while-listening-music-white-headphones-black-female-designer-doing-her-job-office-with-talking-colleagues_197531-3693.jpg?w=1800&t=st=1685363885~exp=1685364485~hmac=04b852a4d6734b9dd0b5192f307882f8eb6446ed524a1b00852d8de8b565eca7");
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+
+    height: 50vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+   
+    
+    color: #8D99AE;
+    text-shadow: 0.5px 0.5px  #EDF2F4 ;
+    padding: 2em;
+    margin-top: 0;
+    margin-bottom: 1.3em;
+}
+.principal-date {
+    font-size: 0.7em;
+}
+.principal-title {
+    font-size: 2em;
+    font-weight: 700;
+}
+.principal-description {
+    font-weight: 400;
+    font-size: 1em;
+} 
+
+/* blog posts */
+.blog-posts {
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+.blog-post {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    margin-bottom: 2em;
+    max-width: 600px;
+    margin-inline: auto;
+}
+.blog-date, .blog-title a, .principal-title a {
+    color: #2B2D42;
+}
+.blog-date {
+    font-size: 0.8em;
+    padding: 0.8em 0;
+    order: 2;
+}
+.blog-img {
+    width: 100%;
+    height: 232px;
+    object-fit: cover;
+    border-radius: 0.3em;
+    order: 1;
+}
+.blog-title  {
+    font-size: 1.5em;
+    line-height: 108.2%;
+    font-weight: 700;
+    padding: 0 0 0.4em 0;
+    order: 3;
+}
+.blog-title a:hover, .blog-title a:active {
+    color:#EF233C
+}
+.blog-description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    color: #8D99AE;
+    order: 4;
+}
+.view-more {
+    text-decoration: underline #2B2D42 solid;
+    color: #2B2D42;
+    font-weight: 600;
+    margin-top: 0.5em;
+    margin-bottom: 3em;
+    text-align: center;
+    cursor: pointer;
+}
+.view-more a:hover, .view-more a:active {
+    color:#EF233C;
+    text-decoration: underline #EF233C;
+
+}
+
+/* footer */
+footer {
+    height: var(--footer-height);
+    background-color: #2B2D42;
+    color: #EDF2F4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-title {
+    font-weight: 600;
+    font-size: 0.9em;
+    margin-bottom: 0.5em;
+}
+.footer-subtitle {
+    font-size: 0.7em;
+}
